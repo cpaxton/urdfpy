@@ -919,7 +919,7 @@ class Material(URDFType):
         self._texture = value
 
     @classmethod
-    def _from_xml(cls, node, path):
+    def _from_xml(cls, node, path, device=None):
         kwargs = cls._parse(node, path)
 
         # Extract the color -- it's weirdly an attribute of a subelement
